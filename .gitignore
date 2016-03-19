@@ -1,0 +1,6 @@
+CMakeLists.txt
+*Test.cpp
+*backup.cpp
+build/
+backup*
+.idea/
