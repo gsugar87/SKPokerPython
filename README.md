@@ -3,7 +3,7 @@ Python module to use the very fast SKPoker hand evaluator with extra features.  
 
 Let's face it, Python is slow.  You need speed to evaluate poker hands, and this repository will help you complete your poker project in Python, but use to speed of C++ to evaluate the hands.
 
-Installation instructions:
+#Installation instructions:
 
 1) Download the entire repository.
 
@@ -20,12 +20,16 @@ lib.win32-2.7.  Go into it and find handEvaluatorCPP.pyd.  This is the python li
 6) Use it with a normal import statement:
 import handEvaluatorCPP
 
-Use:
+#How to Implement:
+
+the evaluate function accepts three lists (one is optional).  The first is a list of two ints representing your hand.  The second is a list of 0,3,4, or 5 cards on the board (again, represented as ints).  The third and optional argument is a list of list of weights to represent the probablilty that you expect your opponent to have a particular hand.  We will talk more about this hand_weights list below.  But first, here is how you use the evaluator:
+
 1) import handEvaluatorCPP
 
 2) Evaluate a hand by:
 
 handEvaluatorCPP.evaluate([mycard1, mycard2],[boardcard1,boardcard2,boardcard3,boardcard4,boardcard5],[hand_weights])
+
 XcardX is an int [0-51]
 
 hand_weights is an optional 169 element list of lists of floats containing the relative percentage chance that you think the opponent will have a given hand.
