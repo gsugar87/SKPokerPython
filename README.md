@@ -29,29 +29,53 @@ Card values are as follows 0=As, 1=Ah, 2=Ad, 3=Ac, 4=Ks, 5=Kh, 6=Kd, ..., 50=2d,
 hand_weights can be confusing.  It is a list of lists.  The first list dimension has 169 elements, corresponding to each
 possible hand in Hold'em (AA, AKunsuited, AQunsuited, etc.).  Here are the hands corresponding to each index:
 0-12:    AA, AKunsuited, AQunsuited, ... A2unsuited
+
 13-24:   AKsuited-A2suited
+
 25-36:   KK-K2unsuited
+
 37-47:   KQsuited-K2suited
+
 48-58:   QQ-Q2unsuited
+
 59-68:   QJsuited-Q2suited
+
 69-78:   JJ-J2unsuited
+
 79-87:   JT-J2suited
+
 88-96:   TT-T2unsuited
+
 97-104:  T9suited-T2suited
+
 105-112: 99-92unsuited
+
 113-119: 98suited-92suited
+
 120-126: 88-82unsuited
+
 127-132: 87-82suited
+
 133-138: 77-72unsuited
+
 139-143: 76-72suited
+
 144-148: 66-62unsuited
+
 149-152: 65-62suited
+
 153-156: 55-52unsuited
+
 157-159: 54-52suited
+
 160-162: 44-42unsuited
+
 163-164: 43-42suited
+
 165-166: 33-32unsuited
+
 167:     32 suited
+
 168:     22
 
 The second dimension contains the individual card suit information.
