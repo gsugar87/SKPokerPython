@@ -34,7 +34,7 @@ XcardX is an int [0-51]
 
 hand_weights is an optional 169 element list of lists of floats containing the relative percentage chance that you think the opponent will have a given hand.
 
-Card values are as follows 0=As, 1=Ah, 2=Ad, 3=Ac, 4=Ks, 5=Kh, 6=Kd, ..., 50=2d, 51=2h. (s = spade, h=heart, d = diamond, c = club).
+Card values are as follows 0=As, 1=Ah, 2=Ad, 3=Ac, 4=Ks, 5=Kh, 6=Kd, ..., 50=2d, 51=2c. (s = spade, h=heart, d = diamond, c = club).
 
 hand_weights can be confusing.  It is a list of lists.  The first list dimension has 169 elements, corresponding to each possible hand in Hold'em (AA, AKunsuited, AQunsuited, etc.).  Here are the hands corresponding to each index:
 
