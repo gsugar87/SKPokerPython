@@ -22,15 +22,15 @@ import handEvaluatorCPP
 
 #How to Implement:
 
-the evaluate function accepts three lists (one is optional).  The first is a list of two ints representing your hand.  The second is a list of 0,3,4, or 5 cards on the board (again, represented as ints).  The third and optional argument is a list of list of weights to represent the probablilty that you expect your opponent to have a particular hand.  We will talk more about this hand_weights list below.  But first, here is how you use the evaluator:
+the evaluate function accepts three lists (one is optional).  The first is a list of two ints representing your hand.  The second is a list of 3, 4, or 5 cards on the board (again, represented as ints).  The third and optional argument is a list of list of weights to represent the probablilty that you expect your opponent to have a particular hand.  We will talk more about this hand_weights list below.  But first, here is how you use the evaluator:
 
 1) import handEvaluatorCPP
 
 2) Evaluate a hand by:
 
-handEvaluatorCPP.evaluate([mycard1, mycard2],[boardcard1,boardcard2,boardcard3,boardcard4,boardcard5],[hand_weights])
+    handEvaluatorCPP.evaluate([mycard1, mycard2],[boardcard1,boardcard2,boardcard3,boardcard4,boardcard5],[hand_weights])
 
-XcardX is an int [0-51]
+a card is an int [0-51]
 
 hand_weights is an optional 169 element list of lists of floats containing the relative percentage chance that you think the opponent will have a given hand.
 
